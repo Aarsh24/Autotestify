@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoTestify - GitHub Analysis Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-2.3.0.min.js"></script>
+    <style>        .report-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+        }
+        .metric-card {
+            border: none;
+            border-left: 4px solid #007bff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .grade-A { border-left-color: #28a745; }
+        .grade-B { border-left-color: #ffc107; }
+        .grade-C { border-left-color: #fd7e14; }
+        .grade-D { border-left-color: #dc3545; }
+        .grade-F { border-left-color: #6c757d; }
+        .chart-container {
+            min-height: 400px;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="report-header text-center">
+        <h1><i class="fab fa-github me-3"></i>GitHub Repository Analysis</h1>
+        <h2>krishpatel07/Pokedex-Website</h2>
+        <p class="mb-0">Generated on August 08, 2025 at 10:47 AM</p>
+    </div>
+
+    <div class="container-fluid py-4">
+        <!-- Repository Overview -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-info-circle me-2"></i>Repository Overview</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <table class="table table-borderless">
+                                    <tr>
+                                        <td><strong>Name:</strong></td>
+                                        <td>Pokedex-Website</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Description:</strong></td>
+                                        <td>Pokemon Trading Cards Website with Dynamic UI</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Language:</strong></td>
+                                        <td>JavaScript</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Created:</strong></td>
+                                        <td>May 20, 2025</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Last Updated:</strong></td>
+                                        <td>June 17, 2025</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <div class="card metric-card text-center">
+                                            <div class="card-body p-3">
+                                                <h4 class="text-primary">2</h4>
+                                                <small>Stars</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card metric-card text-center">
+                                            <div class="card-body p-3">
+                                                <h4 class="text-success">0</h4>
+                                                <small>Forks</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card metric-card text-center">
+                                            <div class="card-body p-3">
+                                                <h4 class="text-info">1</h4>
+                                                <small>Branches</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card metric-card text-center">
+                                            <div class="card-body p-3">
+                                                <h4 class="text-warning">32</h4>
+                                                <small>Code Files</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Code Quality Overview -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h3><i class="fas fa-brain me-2"></i>AI Code Quality Assessment</h3>
+                        <div class="badge bg-primary fs-6">Overall Grade: C</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body text-center">
+                                        <h2 class="text-primary">79/100</h2>
+                                        <p class="mb-0">Overall Score</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h5>Summary</h5>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="text-success">Strengths</h6>
+                                        <ul class="list-unstyled">
+                                            
+                                            <li><i class="fas fa-check text-success me-2"></i>Use of descriptive class names for styling.</li>
+                                            
+                                            <li><i class="fas fa-check text-success me-2"></i>Consistent naming conventions for classes.</li>
+                                            
+                                            <li><i class="fas fa-check text-success me-2"></i>Clear naming conventions for variables and functions.</li>
+                                            
+                                            <li><i class="fas fa-check text-success me-2"></i>Clear separation of concerns.</li>
+                                            
+                                            <li><i class="fas fa-check text-success me-2"></i>Input validation on the client-side to improve user experience.</li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-warning">Areas for Improvement</h6>
+                                        <ul class="list-unstyled">
+                                            
+                                            <li><i class="fas fa-exclamation-triangle text-warning me-2"></i>The image URLs are hardcoded and subject to breakage if the linked assets are moved or deleted.  Consider storing images locally within the repository or using a more robust image hosting solution.</li>
+                                            
+                                            <li><i class="fas fa-exclamation-triangle text-warning me-2"></i>Hardcoding array indices (e.g., types[0], abilities[0], stats[0]) makes the component brittle to changes in data structure.</li>
+                                            
+                                            <li><i class="fas fa-exclamation-triangle text-warning me-2"></i>Lack of error handling for API requests beyond logging to the console.</li>
+                                            
+                                            <li><i class="fas fa-exclamation-triangle text-warning me-2"></i>The password displayed in clear text within the table which is a major security concern.</li>
+                                            
+                                            <li><i class="fas fa-exclamation-triangle text-warning me-2"></i>Update and Delete routes do not check if the resource exists before performing the operation.</li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        
+        <div class="row mb-4">
+            
+            <div class="col-lg-6 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5><i class="fas fa-chart-line me-2"></i>Commit Activity</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="commitChart" class="chart-container"></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div class="col-lg-6 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5><i class="fas fa-chart-pie me-2"></i>Code Quality Distribution</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="gradeChart" class="chart-container"></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div class="col-12 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5><i class="fas fa-chart-bar me-2"></i>File Type Distribution</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="fileTypeChart" class="chart-container"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+
+        <!-- File Assessments -->
+        
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-code me-2"></i>File-by-File Analysis</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">README.md</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">Markdown • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear and concise abstract explaining the project.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Well-defined features with easy-to-understand descriptions.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Correct the incorrect use of the word "User" when referring to the Pokemon Database.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Clarify the purpose of navigating to the 'src' directory in the frontend setup instructions.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">package.json</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JSON • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Well-structured package.json</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Includes common dependencies for a React application</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Investigate the purpose of the 'css' dependency and consider alternatives if it's not the best fit.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider adding devDependencies such as eslint, prettier, or typescript (if applicable).</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-A">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">index.html</h6>
+                                            <span class="badge bg-primary">A</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">HTML • Score: 95/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Well-structured HTML with proper document declaration.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Comprehensive meta tags for SEO and social sharing (Open Graph and Twitter).</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider adding a 'lang' attribute to the root HTML element if you intend to support multiple languages.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>While the current structure is good, ensuring the alt attribute is included on images referenced in meta tags would further improve accessibility and SEO.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">manifest.json</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JSON • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Includes essential fields: short_name, name, icons, start_url, display, theme_color, background_color.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Provides multiple icon sizes for different devices.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider using a more specific start_url if the application has multiple entry points or requires a specific initial state.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add the 'purpose' field to the icon definitions to improve PWA installability and adaptability to different platforms (e.g., 'purpose': 'maskable').</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">User.js</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JavaScript • Score: 70/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Uses Mongoose for schema definition, which is a good practice for interacting with MongoDB.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Defines required fields for username and password, enforcing data integrity.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Implement password hashing (e.g., using bcrypt) before saving the password to the database.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Remove the `confirmPassword` field from the schema and handle the validation during registration.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">index.js</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JavaScript • Score: 70/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Uses express for creating API endpoints.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Uses mongoose for interacting with MongoDB.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Replace the placeholder MongoDB URL with a secure connection string, preferably using environment variables.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Implement password hashing using bcrypt or similar libraries.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">package.json</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JSON • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Common dependencies like express, mongoose, cors, and axios are present.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Start script is defined.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add a meaningful description.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Include relevant keywords for discoverability.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">App.js</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JavaScript • Score: 85/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear component structure using React Router for navigation.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Well-defined routes for different pages and sections.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Standardize directory structure to improve code maintainability (e.g., using 'components' for reusable UI elements).</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider a dedicated 404 page instead of redirecting all unknown routes to Home.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">pokemonCard.js</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JavaScript • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear and concise component structure.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Good separation of concerns (capitalizeFirstLetter function).</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider using a routing library for smoother navigation (e.g., React Router).</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Remove the unnecessary fragment.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">Home.js</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JavaScript • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clean and concise code.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear component structure.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Rename the 'Start' component in '../sections/Home' to something more descriptive.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Implement prop types validation for the 'Start' component and any future props passed to it.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">Loader.css</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">CSS • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear and concise CSS rules.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Well-defined animation using keyframes.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider adding vendor prefixes for animation properties if targeting older browsers.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Evaluate the necessity and impact of the specific cubic-bezier functions used; simpler ones may suffice.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-A">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">Loader.js</h6>
+                                            <span class="badge bg-primary">A</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JavaScript • Score: 95/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Simple and focused component.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Uses semantic HTML.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider adding a role attribute for accessibility (e.g., role="alert" or role="status") if the loader represents an important loading state.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider making the loader configurable (e.g., size, color) through props if it needs to be used in multiple contexts.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">Message.js</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JavaScript • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Simple and focused component.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear separation of concerns.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add prop type validation using PropTypes or TypeScript.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider using CSS classes or a CSS-in-JS library for more complex styling.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">Pokemon.js</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JavaScript • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Uses custom hook `useFetch` for data fetching, promoting reusability.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Handles loading and error states, providing a better user experience.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Simplify error handling by checking if `error` exists before accessing nested properties: `error && error.err && error.err.err`. Consider using optional chaining more consistently.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consolidate the error state. Either rely solely on the `error` prop from `useFetch` or manage a single, comprehensive error state.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">Search.js</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JavaScript • Score: 70/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear separation of concerns with the use of components (SearchBar, PokeCard, Loader).</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Use of custom hook `useFetch` promotes reusability.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Use `Promise.all` to fetch pokemon data in parallel within the `useEffect` hook to avoid the N+1 problem and potential race conditions.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Refactor the `useEffect` hook to reduce complexity and improve readability. Consider splitting it into multiple smaller effects, or moving logic into helper functions.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">Header.js</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JavaScript • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear component structure.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Uses descriptive class names.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Remove the unused 'Link' import.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider removing the fragment if no adjacent elements are needed.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">Home.js</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JavaScript • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear separation of concerns through component structure.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Use of descriptive class names for styling.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Implement actual logout functionality when the logout link is clicked.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider using a configuration file or constants for routes to improve maintainability and prevent hardcoding URLs.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">Pagination.js</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JavaScript • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Simple and functional component.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear JSX structure for rendering pagination links.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Remove console.log statements before deployment.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add checks for null or undefined 'prev' and 'next' props, rendering a disabled state or not rendering the link at all.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">Result.js</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JavaScript • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear separation of concerns through helper functions for capitalization, unit conversions, and color coding.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Use of descriptive variable names.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Use optional chaining and nullish coalescing operators to simplify conditional rendering and avoid the 'Nada' placeholders.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider using Array.map and .filter to iterate over types, abilities, and stats for more dynamic rendering and better handling of varying data lengths.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">SearchBar.js</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JavaScript • Score: 82/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear separation of concerns with a dedicated SearchBar component.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Uses React's useState hook effectively for managing the search input.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider using a more descriptive name than `lookFor` for the callback function. For example, `onSearch` or `handleSearch`.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add a label element associated with the input field to improve accessibility.  Use the 'for' attribute on the label and match it to the input's 'id'.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">formtable.js</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JavaScript • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear component structure.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Uses functional component with props.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Implement input validation to ensure data quality.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Enhance accessibility by properly associating labels with input fields using the `htmlFor` attribute and matching `id`.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">login.js</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JavaScript • Score: 70/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Uses React hooks for state management.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear separation of concerns for input fields and form submission.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Use environment variables to store the API endpoint.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Implement proper error handling to display error messages to the user.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">signup.js</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JavaScript • Score: 70/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear separation of concerns with state management using useState.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Input validation on the client-side to improve user experience.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Implement client-side password hashing or use a secure authentication library to avoid sending plain text passwords.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Use environment variables or a configuration file to manage the API endpoint.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">trainer.js</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JavaScript • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear separation of concerns using React components.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Effective use of `useState` and `useEffect` hooks for managing state and side effects.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Use environment variables to store the API endpoint for easier configuration.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Implement more robust error handling for API requests, such as displaying user-friendly error messages or retrying requests.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">useFetch.js</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JavaScript • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear separation of concerns using a custom hook.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Handles loading and error states effectively.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider setting `isPending` to `false` in the `catch` block after setting the error.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Standardize the error object structure (e.g., always use `{ err: true, message: err.message }` or similar).</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-A">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">index.js</h6>
+                                            <span class="badge bg-primary">A</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JavaScript • Score: 95/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear and concise code.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Uses React.StrictMode for development.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">login.css</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">CSS • Score: 65/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear and readable CSS with comments.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Uses flexbox for layout, which is modern and flexible.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Fix the color issue in `sign-in-container`.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider using `background-size: cover` or `background-size: contain` for background images to maintain aspect ratio and avoid stretching.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">signup.css</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">CSS • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear and well-commented CSS, enhancing readability.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Good use of flexbox for layout, promoting responsiveness.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Improve color contrast for accessibility in .sign-up-container.  Consider using a lighter text color or a different background color.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Use relative paths or CSS variables for background images to improve portability.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">style.css</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">CSS • Score: 70/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Use of CSS variables for color palette enhances maintainability.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear and concise selectors for common elements.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Correct typos in variable names (e.g., 'backgroung' to 'background').</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Refactor font declarations using CSS inheritance or a utility class that can be applied to multiple elements.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">trainer.css</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">CSS • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear and readable CSS structure.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Consistent use of naming conventions (e.g., .btn, .addContainer).</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Refactor button styles to avoid repetition. Use inheritance or mixins (if using a preprocessor) to share common styles.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Use more meaningful class names that reflect the purpose of the element.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Recommendations -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-lightbulb me-2"></i>Recommendations</h3>
+                    </div>
+                    <div class="card-body">
+                        
+                        <ul class="list-group list-group-flush">
+                            
+                            <li class="list-group-item border-0 px-0">
+                                <i class="fas fa-arrow-right text-primary me-2"></i>Consider using a form validation library like Formik or React Hook Form for more robust form handling.
+                            </li>
+                            
+                            <li class="list-group-item border-0 px-0">
+                                <i class="fas fa-arrow-right text-primary me-2"></i>Consider using a more descriptive name than `lookFor` for the callback function. For example, `onSearch` or `handleSearch`.
+                            </li>
+                            
+                            <li class="list-group-item border-0 px-0">
+                                <i class="fas fa-arrow-right text-primary me-2"></i>Consider using a more robust notification system (e.g., toast messages) instead of window.alert.
+                            </li>
+                            
+                            <li class="list-group-item border-0 px-0">
+                                <i class="fas fa-arrow-right text-primary me-2"></i>Minify CSS for production to reduce file size.
+                            </li>
+                            
+                            <li class="list-group-item border-0 px-0">
+                                <i class="fas fa-arrow-right text-primary me-2"></i>Refactor button styles to avoid repetition. Use inheritance or mixins (if using a preprocessor) to share common styles.
+                            </li>
+                            
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3><i class="fas fa-desktop me-2"></i>Selenium UI Validation</h3>
+            </div>
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <table class="table table-bordered">
+                            <tbody>
+                                
+                                    
+                                    <tr>
+                                        <th>Readme Found</th>
+                                        <td>
+                                            
+                                                
+                                                    <span class="badge bg-success">Present</span>
+                                                
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    <tr>
+                                        <th>Badge Found</th>
+                                        <td>
+                                            
+                                                
+                                                    <span class="badge bg-danger">Missing</span>
+                                                
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    <tr>
+                                        <th>Actions Visible</th>
+                                        <td>
+                                            
+                                                
+                                                    <span class="badge bg-success">Present</span>
+                                                
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    <tr>
+                                        <th>Screenshot</th>
+                                        <td>
+                                            
+                                                screenshots\krishpatel07_Pokedex-Website_screenshot.png
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                
+                                    
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="col-md-6 text-center">
+                        <h5>GitHub Repository Screenshot</h5>
+                        <img src="/screenshots/krishpatel07_Pokedex-Website_screenshot.png" alt="Screenshot" class="img-fluid rounded shadow border" style="max-height: 100%;">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+
+
+    <script>
+        // Render charts if data is available
+        
+        Plotly.newPlot('commitChart', , );
+        
+
+        
+        Plotly.newPlot('gradeChart', , );
+        
+
+        
+        Plotly.newPlot('fileTypeChart', , );
+        
+    </script>
+</body>
+</html>
+</body>
+</html>

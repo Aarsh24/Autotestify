@@ -124,7 +124,16 @@ def analyze_github():
     except Exception as e:
         import traceback
         traceback.print_exc()
-        return jsonify({'success': False, 'error': str(e)}), 500
+        
+        error_message = str(e)
+        if "401" in error_message or "Bad credentials" in error_message:
+            error_message = "GitHub authentication failed. Please check your GitHub token in the .env file or the repository may be private."
+        elif "403" in error_message:
+            error_message = "GitHub API rate limit exceeded. Please wait a few minutes and try again."
+        elif "404" in error_message:
+            error_message = "Repository not found. Please check the repository URL."
+        
+        return jsonify({'success': False, 'error': error_message}), 500
 
 @app.route('/api/test-api', methods=['POST'])
 def test_api():

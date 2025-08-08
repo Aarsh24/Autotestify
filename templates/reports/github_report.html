@@ -328,18 +328,31 @@
     <script>
         // Render charts if data is available
         {% if charts.commit_activity %}
-        Plotly.newPlot('commitChart', {{ charts.commit_activity.data|safe }}, {{ charts.commit_activity.layout|safe }});
+        try {
+            var commitData = {{ charts.commit_activity|safe }};
+            Plotly.newPlot('commitChart', commitData.data, commitData.layout);
+        } catch(e) {
+            console.error('Error rendering commit chart:', e);
+        }
         {% endif %}
 
         {% if charts.grade_distribution %}
-        Plotly.newPlot('gradeChart', {{ charts.grade_distribution.data|safe }}, {{ charts.grade_distribution.layout|safe }});
+        try {
+            var gradeData = {{ charts.grade_distribution|safe }};
+            Plotly.newPlot('gradeChart', gradeData.data, gradeData.layout);
+        } catch(e) {
+            console.error('Error rendering grade chart:', e);
+        }
         {% endif %}
 
         {% if charts.file_types %}
-        Plotly.newPlot('fileTypeChart', {{ charts.file_types.data|safe }}, {{ charts.file_types.layout|safe }});
+        try {
+            var fileTypeData = {{ charts.file_types|safe }};
+            Plotly.newPlot('fileTypeChart', fileTypeData.data, fileTypeData.layout);
+        } catch(e) {
+            console.error('Error rendering file type chart:', e);
+        }
         {% endif %}
     </script>
-</body>
-</html>
 </body>
 </html>

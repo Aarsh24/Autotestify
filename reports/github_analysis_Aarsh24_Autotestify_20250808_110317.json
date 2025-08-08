@@ -1,0 +1,9 @@
+{
+  "selenium_ui": {
+    "readme_found": true,
+    "badge_found": false,
+    "actions_visible": true,
+    "screenshot": "screenshots\\Aarsh24_Autotestify_screenshot.png",
+    "screenshot_path": "Aarsh24_Autotestify_screenshot.png"
+  }
+}

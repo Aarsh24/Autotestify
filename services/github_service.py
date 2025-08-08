@@ -15,7 +15,15 @@ class GitHubService:
     def __init__(self):
         self.token = os.environ.get('GITHUB_TOKEN')
         if self.token:
-            self.github = Github(self.token, per_page=100)
+            try:
+                self.github = Github(self.token, per_page=100)
+                # Test the token immediately
+                self.github.get_user().login
+            except Exception as e:
+                print(f"Invalid GitHub token: {e}")
+                # Fall back to unauthenticated access
+                self.github = Github(per_page=30)
+                self.token = None
         else:
             self.github = Github(per_page=30)
 
@@ -47,11 +55,20 @@ class GitHubService:
 
     def analyze_repository(self, owner, repo_name):
         try:
-            if not self._check_rate_limit_status():
+            if self.token and not self._check_rate_limit_status():
                 raise Exception("GitHub API rate limit exceeded.")
 
             self._rate_limit_check()
-            repo = self.github.get_repo(f"{owner}/{repo_name}")
+            try:
+                repo = self.github.get_repo(f"{owner}/{repo_name}")
+            except Exception as e:
+                if "401" in str(e) or "Bad credentials" in str(e):
+                    # Try without authentication
+                    self.github = Github(per_page=30)
+                    self.token = None
+                    repo = self.github.get_repo(f"{owner}/{repo_name}")
+                else:
+                    raise e
 
             repo_data = {
                 'name': repo.name,

@@ -1,0 +1,1942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoTestify - GitHub Analysis Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-2.3.0.min.js"></script>
+    <style>        .report-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+        }
+        .metric-card {
+            border: none;
+            border-left: 4px solid #007bff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .grade-A { border-left-color: #28a745; }
+        .grade-B { border-left-color: #ffc107; }
+        .grade-C { border-left-color: #fd7e14; }
+        .grade-D { border-left-color: #dc3545; }
+        .grade-F { border-left-color: #6c757d; }
+        .chart-container {
+            min-height: 400px;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="report-header text-center">
+        <h1><i class="fab fa-github me-3"></i>GitHub Repository Analysis</h1>
+        <h2>Aarsh24/Autotestify</h2>
+        <p class="mb-0">Generated on August 08, 2025 at 11:03 AM</p>
+    </div>
+
+    <div class="container-fluid py-4">
+        <!-- Repository Overview -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-info-circle me-2"></i>Repository Overview</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <table class="table table-borderless">
+                                    <tr>
+                                        <td><strong>Name:</strong></td>
+                                        <td>Autotestify</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Description:</strong></td>
+                                        <td>A web-based app that lets anyone point to a GitHub repo or API endpoint and instantly generate automated test suites. Think: click, test, report.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Language:</strong></td>
+                                        <td>HTML</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Created:</strong></td>
+                                        <td>August 05, 2025</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Last Updated:</strong></td>
+                                        <td>August 08, 2025</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <div class="card metric-card text-center">
+                                            <div class="card-body p-3">
+                                                <h4 class="text-primary">1</h4>
+                                                <small>Stars</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card metric-card text-center">
+                                            <div class="card-body p-3">
+                                                <h4 class="text-success">0</h4>
+                                                <small>Forks</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card metric-card text-center">
+                                            <div class="card-body p-3">
+                                                <h4 class="text-info">1</h4>
+                                                <small>Branches</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="card metric-card text-center">
+                                            <div class="card-body p-3">
+                                                <h4 class="text-warning">76</h4>
+                                                <small>Code Files</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Code Quality Overview -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h3><i class="fas fa-brain me-2"></i>AI Code Quality Assessment</h3>
+                        <div class="badge bg-primary fs-6">Overall Grade: C</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body text-center">
+                                        <h2 class="text-primary">72/100</h2>
+                                        <p class="mb-0">Overall Score</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <h5>Summary</h5>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h6 class="text-success">Strengths</h6>
+                                        <ul class="list-unstyled">
+                                            
+                                            <li><i class="fas fa-check text-success me-2"></i>Uses type hints for better code readability and maintainability.</li>
+                                            
+                                            <li><i class="fas fa-check text-success me-2"></i>Clearly displays the values of important configuration parameters.</li>
+                                            
+                                            <li><i class="fas fa-check text-success me-2"></i>Clear comments and sectioning.</li>
+                                            
+                                            <li><i class="fas fa-check text-success me-2"></i>Uses accordion for collapsible summary, enhancing user experience.</li>
+                                            
+                                            <li><i class="fas fa-check text-success me-2"></i>Well-structured code with clear comments.</li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="text-warning">Areas for Improvement</h6>
+                                        <ul class="list-unstyled">
+                                            
+                                            <li><i class="fas fa-exclamation-triangle text-warning me-2"></i>Missing accessibility considerations (e.g., contrast ratios, focus states).</li>
+                                            
+                                            <li><i class="fas fa-exclamation-triangle text-warning me-2"></i>No error handling for `os.path.getctime` and `os.path.getsize` if the report file does not exist.</li>
+                                            
+                                            <li><i class="fas fa-exclamation-triangle text-warning me-2"></i>Potentially inconsistent date formatting due to the mix of `strftime` and other possible formatting in the template engine.</li>
+                                            
+                                            <li><i class="fas fa-exclamation-triangle text-warning me-2"></i>The `_discover_endpoints` method is not implemented, which limits the tool's usability.</li>
+                                            
+                                            <li><i class="fas fa-exclamation-triangle text-warning me-2"></i>The "feature-list" lists could benefit from more descriptive text or context.</li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        
+        <div class="row mb-4">
+            
+            <div class="col-lg-6 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5><i class="fas fa-chart-line me-2"></i>Commit Activity</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="commitChart" class="chart-container"></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div class="col-lg-6 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5><i class="fas fa-chart-pie me-2"></i>Code Quality Distribution</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="gradeChart" class="chart-container"></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div class="col-12 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5><i class="fas fa-chart-bar me-2"></i>File Type Distribution</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="fileTypeChart" class="chart-container"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+
+        <!-- File Assessments -->
+        
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-code me-2"></i>File-by-File Analysis</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row g-3">
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-D">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">README.md</h6>
+                                            <span class="badge bg-primary">D</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">Markdown • Score: 40/100</p>
+                                        
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add a detailed project description outlining the purpose and functionality of Autotestify.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Include installation instructions for users to set up the project.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">app.py</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">Python • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Well-structured Flask application with clear separation of concerns via services.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Use of configuration class promotes maintainability.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Implement the email sending functionality to complete the workflow.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Implement input validation and sanitization on `repo_url`, `owner`, and `repo_name` to prevent potential security vulnerabilities such as command injection and directory traversal.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">config.py</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">Python • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Uses environment variables for configuration, which is a good practice.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Includes a default 'dev' secret key.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add a warning or more prominent comment about changing the `SECRET_KEY` in a production environment.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Remove the commented-out code for better readability and maintainability.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">api_test_20250805_112735.html</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">HTML • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Uses Bootstrap for responsive layout and styling.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Includes Font Awesome for icons.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Integrate with the API testing framework to dynamically populate the report with actual test results, including success/failure counts, response times, endpoint list, and security analysis details.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Use JavaScript to update the content of the cards and charts based on the API test results.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">api_test_20250805_114442.html</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">HTML • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear structure with well-defined CSS classes.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Use of Bootstrap for responsive layout.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Load JSON data from a separate file or API endpoint to improve performance and maintainability.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Implement error handling around Plotly.newPlot and other JavaScript code to gracefully handle potential issues.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">api_test_20250805_115004.html</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">HTML • Score: 85/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Well-structured HTML with clear semantic elements.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Use of Bootstrap and Font Awesome for styling and icons enhances appearance.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Provide the complete HTML file for a more thorough review, including the actual report content and layout.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Ensure that the JSON data used for chart rendering is complete, valid, and well-formed to avoid errors and ensure proper chart display.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">github_analysis_Aarsh24_Online-Multiplayer-Game--Chess-Chaturanga-_20250805_110118.json</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JSON • Score: 65/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>README found indicates some effort to document the project.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Actions visible suggests CI/CD might be configured.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add badges to the README file for build status, code coverage, and other relevant metrics.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Provide more context and code examples for a more in-depth review.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">github_analysis_Aarsh24_Online-Multiplayer-Game--Chess-Chaturanga-_20250805_110158.json</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JSON • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Presence of a README file suggests documentation effort.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Visible GitHub Actions indicate CI/CD implementation.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider adding badges to the README to provide quick insights into the project's health.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Expand the analysis to include code quality metrics (e.g., SonarQube integration).</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">github_analysis_Aarsh24_Online-Multiplayer-Game--Chess-Chaturanga-_20250805_110256.json</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JSON • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>README found, indicating documentation exists.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Actions visible, suggesting CI/CD implementation.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add badges to the README to display build status, code coverage, etc.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Provide more details about the project structure, technologies used, and key functionalities to enable a comprehensive review.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">github_analysis_krishpatel07_DummyRepo_20250614_215513.html</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">HTML • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear and readable HTML structure.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Uses semantic HTML5 elements (e.g., `header`, `content`).</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Investigate and fix the 'Report Generation Error'. Provide meaningful analysis, metrics, or visualizations based on the raw data.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Enhance the CSS for a more polished and user-friendly presentation. Consider using a CSS framework or library.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">github_analysis_krishpatel07_DummyRepo_20250615_014338.json</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JSON • Score: 60/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Actions are visible, indicating some level of automation or CI/CD is present.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Create a comprehensive README file explaining the project's purpose, setup instructions, usage examples, and contribution guidelines.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add badges to the README to display build status, code coverage, dependency status, and other relevant metrics.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">github_analysis_krishpatel07_DummyRepo_20250615_020118.json</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JSON • Score: 60/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Actions are visible.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add a README file to describe the project and provide instructions.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Include badges for build status, code coverage, or other relevant metrics.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">github_analysis_krishpatel07_DummyRepo_20250615_021215.json</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JSON • Score: 60/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Actions are visible.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add a README file to provide project description, instructions, and contribution guidelines.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Include badges for build status, code coverage, and dependencies to improve project visibility and credibility.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">github_analysis_krishpatel07_DummyRepo_20250615_024829.json</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JSON • Score: 60/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Presence of Selenium UI analysis.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add a README file explaining the project.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Include badges for build status, coverage, etc.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">github_analysis_krishpatel07_DummyRepo_20250615_025255.json</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JSON • Score: 60/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Actions are visible.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add a README file to provide project information and instructions.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Include badges for build status, code coverage, and other relevant metrics.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">github_analysis_krishpatel07_DummyRepo_20250615_031229.json</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JSON • Score: 65/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Actions are visible, indicating some level of automation setup.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Create a comprehensive README file explaining the project's purpose, setup instructions, usage examples, and contribution guidelines.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add relevant badges to the README file, such as build status, code coverage, and dependency management.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">github_analysis_krishpatel07_DummyRepo_20250615_031604.json</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JSON • Score: 60/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Actions are visible, indicating some CI/CD implementation might be present, which helps in collaboration.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add a README file explaining the project's purpose, setup instructions, and usage guidelines.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Incorporate badges to display the project's status (e.g., build status, test coverage, license).</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">github_analysis_krishpatel07_DummyRepo_20250615_032442.json</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JSON • Score: 60/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Actions are visible.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Screenshot is present (although the quality is unknown without seeing it).</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add a README file to the repository to explain the project and how to use it.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Include badges to display build status, code coverage, and other relevant information.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">github_analysis_krishpatel07_DummyRepo_20250615_032837.json</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JSON • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>README file exists, indicating some documentation.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Actions are visible, suggesting CI/CD might be in place or intended.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add badges to the README to indicate build status, code coverage, and other relevant metrics.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Perform static code analysis to identify potential code quality issues and security vulnerabilities.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">krishpatel07_DummyRepo_report_20250615012947.json</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JSON • Score: 60/100</p>
+                                        
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add a README file to describe the project, its purpose, and how to use it.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Include badges in the README file to display build status, code coverage, and other relevant metrics.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">krishpatel07_DummyRepo_report_20250615013645.json</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JSON • Score: 60/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Actions are visible, indicating some level of CI/CD consideration.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Create a README file to explain the project, its purpose, setup instructions, and usage.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add badges to the README to display the build status, code coverage, and other relevant metrics.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">krishpatel07_DummyRepo_report_20250615013956.json</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JSON • Score: 60/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Actions are visible which promotes transparency.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add a README file to describe the project, its purpose, and usage.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Include badges to display build status, test coverage, or other relevant metrics.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">krishpatel07_DummyRepo_report_20250615014328.json</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JSON • Score: 60/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Screenshot is present indicating UI testing.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Actions are visible suggesting CI/CD is set up.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Create a comprehensive README file explaining the project, setup instructions, and usage.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add badges to the README file to display the build status, test coverage, and other relevant information.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">krishpatel07_DummyRepo_report_20250615020109.json</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JSON • Score: 60/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Actions are visible, indicating some CI/CD configuration exists.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add a README file to explain the project, its setup, and usage.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Include badges for build status, code coverage, and other relevant metrics.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">krishpatel07_DummyRepo_report_20250615021207.json</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JSON • Score: 60/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Actions are visible, indicating CI/CD implementation (potentially)</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Screenshot provided, aiding in UI assessment</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add a comprehensive README file explaining the project's purpose, setup instructions, and usage.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Include badges for build status, code coverage, and other relevant metrics.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-A">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">__init__.py</h6>
+                                            <span class="badge bg-primary">A</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">Python • Score: 100/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Simple and valid Python package initialization.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">api_tester.py</h6>
+                                            <span class="badge bg-primary">B+</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">Python • Score: 85/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Uses `requests.Session` for connection pooling, improving performance.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Implements concurrent testing using `ThreadPoolExecutor` for faster execution.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Implement the `_discover_endpoints` method to automatically discover API endpoints (e.g., using OpenAPI/Swagger).</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Implement schema validation using the `jsonschema` library to ensure API responses conform to expected schemas.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">email_service.py</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">Python • Score: 70/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear function documentation.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>HTML email formatting enhances readability.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Uncomment the code to make it functional.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider using a templating engine (e.g., Jinja2) for the HTML email body to improve maintainability and separate concerns.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">gemini_service.py</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">Python • Score: 75/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Modular design with a dedicated class for Gemini interaction.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Error handling implemented to gracefully handle API issues and provide mock assessments.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Implement more robust prompt validation and sanitization to mitigate prompt injection risks.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider using a more sophisticated method for handling large files, such as chunking or summarizing.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-C">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">github_service.py</h6>
+                                            <span class="badge bg-primary">C</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">Python • Score: 70/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Rate limiting is implemented to avoid exceeding GitHub API limits.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Basic repository information is retrieved and structured.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Complete the implementation of contributor retrieval.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Combine the rate limiting mechanisms into a single, more robust function.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-F">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">report_generator.py</h6>
+                                            <span class="badge bg-primary">F</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">Python • Score: 0/100</p>
+                                        
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Uncomment the code and provide a runnable example to facilitate a meaningful review.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">style.css</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">CSS • Score: 85/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Well-organized and readable CSS.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Good use of CSS variables for theming.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Minimize the use of `!important` by improving CSS specificity.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider using media queries to make the design responsive across different screen sizes.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">main.js</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">JavaScript • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Well-structured code with clear comments.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Good use of event listeners for various functionalities.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider using a more dynamic approach for the submit button timeout, possibly based on the expected processing time or server response.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Implement a more robust form submission handler that supports AJAX requests and error handling.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">api_testing.html</h6>
+                                            <span class="badge bg-primary">B+</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">HTML • Score: 88/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Well-structured HTML using Bootstrap for layout and styling.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear form labels and instructions.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Implement form submission handling using JavaScript or by providing an `action` attribute to the `<form>` element and server-side logic.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Implement CSRF protection.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-A">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">base.html</h6>
+                                            <span class="badge bg-primary">A</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">HTML • Score: 92/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear and well-structured HTML.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Use of Bootstrap for styling, promoting responsiveness.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider adding a reset.css or normalize.css to handle cross-browser styling inconsistencies.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Implement a loading screen or spinner for a better user experience while waiting for content to load.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-A">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">github_analysis.html</h6>
+                                            <span class="badge bg-primary">A</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">HTML • Score: 95/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Well-structured HTML using Bootstrap for layout and styling.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear and concise form with appropriate labels and placeholders.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add client-side validation to ensure the URL is a valid GitHub repository URL.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Implement proper error handling UI to display error messages to the user.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">index.html</h6>
+                                            <span class="badge bg-primary">B+</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">HTML • Score: 88/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear and concise HTML structure.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Effective use of Bootstrap classes for styling and layout.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add descriptive ARIA labels or visually hidden text to the progress bars to explain their purpose and current value.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add alt attributes to all images, describing the image content.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">reports.html</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">HTML • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Well-structured HTML using Bootstrap for layout and styling.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear separation of concerns using Jinja templating.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Add `rel="noopener noreferrer"` to the `target="_blank"` link for security.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Verify the existence and purpose of the `selenium_ui` variable to ensure it aligns with the template's intent.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-A">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">__init__.py</h6>
+                                            <span class="badge bg-primary">A</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">Python • Score: 100/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Simple and clear indication of package functionality.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">api_report.html</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">HTML • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Well-structured HTML with clear sections for report header, overview, and details.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Use of Bootstrap for responsive layout and styling.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider using a templating engine more thoroughly, separating the HTML structure from the data and logic.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Implement client-side error handling for the templating variables.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">github_report.html</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">HTML • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Well-structured HTML with clear sections and semantic tags.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Uses Bootstrap for responsive layout and styling.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Complete the HTML file to include all intended elements and content.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider implementing a fallback mechanism or local copies of CDN assets to improve resilience.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">test_config.py</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">Python • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Simple and direct code to display configuration values.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Uses conditional expression to avoid printing the full GitHub token for security reasons.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Completely avoid printing any portion of the GitHub token in the test output. Replace it with a generic message like 'Loaded' or use a placeholder in testing.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Implement a testing configuration file or use mocking to isolate the test from the actual configuration.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6">
+                                <div class="card metric-card grade-B">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-2">
+                                            <h6 class="card-title mb-0">test_gemini.py</h6>
+                                            <span class="badge bg-primary">B</span>
+                                        </div>
+                                        <p class="text-muted small mb-2">Python • Score: 80/100</p>
+                                        
+                                        
+                                        <div class="mb-2">
+                                            <small class="text-success fw-bold">Strengths:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Clear and concise code.</li>
+                                                
+                                                <li><i class="fas fa-check text-success me-1"></i>Uses environment variables for API key management (attempts).</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <div class="mb-0">
+                                            <small class="text-primary fw-bold">Suggestions:</small>
+                                            <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Remove the hardcoded API key fallback entirely. The script should fail gracefully if the environment variable is not set, prompting the user to configure it correctly.</li>
+                                                
+                                                <li><i class="fas fa-lightbulb text-primary me-1"></i>Consider allowing the model name to be configurable, perhaps via an environment variable or command-line argument.</li>
+                                                
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Recommendations -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-lightbulb me-2"></i>Recommendations</h3>
+                    </div>
+                    <div class="card-body">
+                        
+                        <ul class="list-group list-group-flush">
+                            
+                            <li class="list-group-item border-0 px-0">
+                                <i class="fas fa-arrow-right text-primary me-2"></i>Add badges to the README to display build status, code coverage, dependency status, and other relevant metrics.
+                            </li>
+                            
+                            <li class="list-group-item border-0 px-0">
+                                <i class="fas fa-arrow-right text-primary me-2"></i>Add a README file to provide project information and instructions.
+                            </li>
+                            
+                            <li class="list-group-item border-0 px-0">
+                                <i class="fas fa-arrow-right text-primary me-2"></i>Implement proper error handling UI to display error messages to the user.
+                            </li>
+                            
+                            <li class="list-group-item border-0 px-0">
+                                <i class="fas fa-arrow-right text-primary me-2"></i>Include author or maintainer information for contact and attribution.
+                            </li>
+                            
+                            <li class="list-group-item border-0 px-0">
+                                <i class="fas fa-arrow-right text-primary me-2"></i>Consider using a more robust content type parser to handle complex content types effectively.
+                            </li>
+                            
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h3><i class="fas fa-desktop me-2"></i>Selenium UI Validation</h3>
+            </div>
+            <div class="card-body">
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <table class="table table-bordered">
+                            <tbody>
+                                
+                                    
+                                    <tr>
+                                        <th>Readme Found</th>
+                                        <td>
+                                            
+                                                
+                                                    <span class="badge bg-success">Present</span>
+                                                
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    <tr>
+                                        <th>Badge Found</th>
+                                        <td>
+                                            
+                                                
+                                                    <span class="badge bg-danger">Missing</span>
+                                                
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    <tr>
+                                        <th>Actions Visible</th>
+                                        <td>
+                                            
+                                                
+                                                    <span class="badge bg-success">Present</span>
+                                                
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                
+                                    
+                                    <tr>
+                                        <th>Screenshot</th>
+                                        <td>
+                                            
+                                                screenshots\Aarsh24_Autotestify_screenshot.png
+                                            
+                                        </td>
+                                    </tr>
+                                    
+                                
+                                    
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="col-md-6 text-center">
+                        <h5>GitHub Repository Screenshot</h5>
+                        <img src="/screenshots/Aarsh24_Autotestify_screenshot.png" alt="Screenshot" class="img-fluid rounded shadow border" style="max-height: 100%;">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+
+
+    <script>
+        // Render charts if data is available
+        
+        try {
+            var commitData = {"data": [{"hovertemplate": "date_only=%{x}<br>count=%{y}<extra></extra>", "legendgroup": "", "line": {"color": "#636efa", "dash": "solid"}, "marker": {"symbol": "circle"}, "mode": "lines", "name": "", "orientation": "v", "showlegend": false, "x": ["2025-08-05", "2025-08-06", "2025-08-08"], "xaxis": "x", "y": {"dtype": "i1", "bdata": "AwEE"}, "yaxis": "y", "type": "scatter"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "date_only"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "count"}}, "legend": {"tracegroupgap": 0}, "title": {"text": "Daily Commit Activity"}, "height": 400}};
+            Plotly.newPlot('commitChart', commitData.data, commitData.layout);
+        } catch(e) {
+            console.error('Error rendering commit chart:', e);
+        }
+        
+
+        
+        try {
+            var gradeData = {"data": [{"domain": {"x": [0.0, 1.0], "y": [0.0, 1.0]}, "hovertemplate": "label=%{label}<br>value=%{value}<extra></extra>", "labels": ["B", "C", "A", "B+", "D", "F"], "legendgroup": "", "name": "", "showlegend": true, "values": {"dtype": "i1", "bdata": "EREEAwEB"}, "type": "pie"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "legend": {"tracegroupgap": 0}, "title": {"text": "Code Quality Grades"}, "height": 400}};
+            Plotly.newPlot('gradeChart', gradeData.data, gradeData.layout);
+        } catch(e) {
+            console.error('Error rendering grade chart:', e);
+        }
+        
+
+        
+        try {
+            var fileTypeData = {"data": [{"hovertemplate": "x=%{x}<br>y=%{y}<extra></extra>", "legendgroup": "", "marker": {"color": "#636efa", "pattern": {"shape": ""}}, "name": "", "orientation": "v", "showlegend": false, "textposition": "auto", "x": ["HTML", "JSON", "Python", "Markdown", "CSS", "JavaScript"], "xaxis": "x", "y": {"dtype": "i1", "bdata": "LBILAQEB"}, "yaxis": "y", "type": "bar"}], "layout": {"template": {"data": {"histogram2dcontour": [{"type": "histogram2dcontour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "choropleth": [{"type": "choropleth", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "histogram2d": [{"type": "histogram2d", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "heatmap": [{"type": "heatmap", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "contourcarpet": [{"type": "contourcarpet", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "contour": [{"type": "contour", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "surface": [{"type": "surface", "colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}], "mesh3d": [{"type": "mesh3d", "colorbar": {"outlinewidth": 0, "ticks": ""}}], "scatter": [{"fillpattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}, "type": "scatter"}], "parcoords": [{"type": "parcoords", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolargl": [{"type": "scatterpolargl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "bar"}], "scattergeo": [{"type": "scattergeo", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterpolar": [{"type": "scatterpolar", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "histogram": [{"marker": {"pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "histogram"}], "scattergl": [{"type": "scattergl", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatter3d": [{"type": "scatter3d", "line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermap": [{"type": "scattermap", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattermapbox": [{"type": "scattermapbox", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scatterternary": [{"type": "scatterternary", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "scattercarpet": [{"type": "scattercarpet", "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}, "pattern": {"fillmode": "overlay", "size": 10, "solidity": 0.2}}, "type": "barpolar"}], "pie": [{"automargin": true, "type": "pie"}]}, "layout": {"autotypenumbers": "strict", "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "hovermode": "closest", "hoverlabel": {"align": "left"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"bgcolor": "#E5ECF6", "angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "ternary": {"bgcolor": "#E5ECF6", "aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]]}, "xaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "yaxis": {"gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "automargin": true, "zerolinewidth": 2}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white", "gridwidth": 2}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "geo": {"bgcolor": "white", "landcolor": "#E5ECF6", "subunitcolor": "white", "showland": true, "showlakes": true, "lakecolor": "white"}, "title": {"x": 0.05}, "mapbox": {"style": "light"}}}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "x"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "y"}}, "legend": {"tracegroupgap": 0}, "title": {"text": "File Type Distribution"}, "barmode": "relative", "height": 400}};
+            Plotly.newPlot('fileTypeChart', fileTypeData.data, fileTypeData.layout);
+        } catch(e) {
+            console.error('Error rendering file type chart:', e);
+        }
+        
+    </script>
+</body>
+</html>
